@@ -1,0 +1,43 @@
+<!-- Form Input in javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input from form</title>
+    <style>
+        #print{
+            text-align: center;
+        }
+        .div{
+            width: 100vw;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div">
+        <form id="myForm">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name">
+            <input type="button" value="Submit" onclick="getInput()">
+        </form>
+    </div>
+    <h1 id="print"></h1>
+
+    <script>
+
+        function getInput() {
+            var name = document.getElementById("name").value;
+            name = "Hello, " + name + "!";
+            console.log(name);
+            document.getElementById("print").innerText = name;
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+const readline = require('readline');
+
+// Take input from command line
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('Enter your name: ', (name) => {
+    console.log(`Hello, ${name}!`);
+    rl.close();
+});

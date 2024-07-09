@@ -1,0 +1,29 @@
+<!-- this is not working now -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User input from commandline</title>
+</head>
+<body>
+    <script>
+        const readline = require('readline');
+
+// Take input from command line
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('Enter your name: ', (name) => {
+    console.log(`Hello, ${name}!`);
+    rl.close();
+});
+
+    </script>
+</body>
+</html>
