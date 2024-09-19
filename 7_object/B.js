@@ -1,0 +1,1 @@
+// jab bhi objects ko constructor ki tarah banate hai singleton object banta hai
